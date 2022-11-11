@@ -9,36 +9,36 @@ import { AbmClaseComponent } from '../abm-clase/abm-clase.component';
 
 import { DialogClaseComponent } from './dialog-clase.component';
 
-describe('Pruebas unitarias de Clases', () => {
-  let component: DialogClaseComponent;
-  let fixture: ComponentFixture<DialogClaseComponent>;
+// describe('Pruebas unitarias de Clases', () => {
+//   let component: DialogClaseComponent;
+//   let fixture: ComponentFixture<DialogClaseComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ DialogClaseComponent ],
-      imports: [ ReactiveFormsModule],
-      providers: [
-        { provide: MAT_DIALOG_DATA, useValue: {} },
-        { provide: MatDialogRef, useValue: {} } 
-    ]
-    })
-    .compileComponents();
+//   beforeEach(async () => {
+//     await TestBed.configureTestingModule({
+//       declarations: [ DialogClaseComponent ],
+//       imports: [ ReactiveFormsModule],
+//       providers: [
+//         { provide: MAT_DIALOG_DATA, useValue: {} },
+//         { provide: MatDialogRef, useValue: {} } 
+//     ]
+//     })
+//     .compileComponents();
 
-    fixture = TestBed.createComponent(DialogClaseComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+//     fixture = TestBed.createComponent(DialogClaseComponent);
+//     component = fixture.componentInstance;
+//     fixture.detectChanges();
+//   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+//   it('should create', () => {
+//     expect(component).toBeTruthy();
+//   });
 
-  it('El formulario se mantiene invalido cuando ingreso unicamente la comision del curso', () => {
-    const formulario = component.formClase;
-    const comision = formulario.controls['nombre'];
+//   it('El formulario se mantiene invalido cuando ingreso unicamente la comision del curso', () => {
+//     const formulario = component.formClase;
+//     const comision = formulario.controls['nombre'];
 
-    comision.setValue('Reactive Forms');
+//     comision.setValue('Reactive Forms');
 
-    expect(formulario.valid).toBeFalse();
-  })
-});
+//     expect(formulario.valid).toBeFalse();
+//   })
+// });

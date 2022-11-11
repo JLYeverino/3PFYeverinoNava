@@ -31,7 +31,7 @@ describe('Pruebas dialog alumno', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  it('El formulario se mantiene invalido cuando ingreso unicamente la comision del curso', () => {
+  it('El formulario se mantiene invalido cuando se ingresa unicamente el nombre de la clase', () => {
     const formulario = component.formAlumno;
     const comision = formulario.controls['nombre'];
 
